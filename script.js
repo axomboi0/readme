@@ -1,12 +1,5 @@
-const bgMusic = document.getElementById('bgMusic');
-
-// start music after first interaction
-document.addEventListener('click', () => {
-    if (bgMusic && bgMusic.paused) {
-        bgMusic.volume = 0.3; // soft volume
-        bgMusic.play().catch(() => {});
-    }
-}, { once: true });
+const bgMusic = document.getElementById("bgMusic");
+let musicStarted = false;
 
 let currentPage = 1;
 
