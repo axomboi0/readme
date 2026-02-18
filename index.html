@@ -23,34 +23,8 @@
         <button class="btn" onclick="goToPage(2)">Next →</button>
     </div>
 
-    <!-- Page 2: Audio -->
+    <!-- Page 2: Main Message -->
     <div class="page" id="page2">
-        <div class="decoration top-left">🎵</div>
-        <div class="decoration top-right">🎵</div>
-        <div class="decoration bottom-left">🎶</div>
-        <div class="decoration bottom-right">🎶</div>
-
-        <div class="audio-container">
-            <p class="audio-caption">please listen if you want to 💗</p>
-            <div class="audio-player">
-                <button class="play-btn" id="playBtn" onclick="togglePlay()">
-                    <div class="play-icon"></div>
-                    <div class="pause-icon"></div>
-                </button>
-                <div class="progress-container">
-                    <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
-                    <div class="progress-bar" id="progressBar" onclick="seekAudio(event)">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
-                </div>
-            </div>
-            <audio id="audioPlayer" src="your-audio-file.mp3"></audio>
-        </div>
-        <button class="btn" onclick="goToPage(3)">Next →</button>
-    </div>
-
-    <!-- Page 3: Long message -->
-    <div class="page" id="page3">
         <div class="decoration top-left">✨</div>
         <div class="decoration top-right">✨</div>
         <div class="decoration bottom-left">💝</div>
@@ -86,13 +60,13 @@
         <p class="small-message">That’s all I wanted to say.</p>
 
         <div class="btn-container">
-            <button class="btn yes" onclick="goToPage(5)">Continue ✨</button>
-            <button class="btn no" onclick="goToPage(4)">Back</button>
+            <button class="btn yes" onclick="goToPage(4)">Continue ✨</button>
+            <button class="btn no" onclick="goToPage(3)">Back</button>
         </div>
     </div>
 
-    <!-- Page 4: No response -->
-    <div class="page" id="page4">
+    <!-- Page 3: Quiet pause -->
+    <div class="page" id="page3">
         <div class="decoration top-left">🥺</div>
         <div class="decoration top-right">🥺</div>
         <div class="decoration bottom-left">💔</div>
@@ -102,11 +76,11 @@
             <img src="sad-image-placeholder.jpg" alt="Quiet moment" id="sadImage">
         </div>
         <p class="image-caption">It’s okay… take your time.</p>
-        <button class="btn" onclick="goToPage(3)">Go Back</button>
+        <button class="btn" onclick="goToPage(2)">Go Back</button>
     </div>
 
-    <!-- Page 5: Ending -->
-    <div class="page" id="page5">
+    <!-- Page 4: Ending -->
+    <div class="page" id="page4">
         <div class="decoration top-left">✨</div>
         <div class="decoration top-right">✨</div>
         <div class="decoration bottom-left">💫</div>
