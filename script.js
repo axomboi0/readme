@@ -1,10 +1,18 @@
+let currentPage = 1;
+
 const bgMusic = document.getElementById("bgMusic");
 let musicStarted = false;
 
-let currentPage = 1;
-
 // Page navigation
 function goToPage(pageNum) {
+
+    // START MUSIC when going to page 2 first time
+    if (!musicStarted && pageNum === 2 && bgMusic) {
+        bgMusic.volume = 0.20; // soft volume
+        bgMusic.play().catch(() => {});
+        musicStarted = true;
+    }
+
     document.getElementById(`page${currentPage}`).classList.remove('active');
     currentPage = pageNum;
     document.getElementById(`page${pageNum}`).classList.add('active');
